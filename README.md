@@ -20,6 +20,30 @@ Program to implement the linear regression using gradient descent.
 Developed by: 
 RegisterNumber:  
 */
+import numpy as np
+import pandas as pd
+from sklearn.preprocessing import StandardScaler
+
+def linear_regression(x1,y,learning_rate=0.01,num_iters=1000):
+    
+    # add a column of ones to x for the intercept term
+    x = np.c_[np.ones(len(x1)),x1]
+    
+    # initialize theta with zeros
+    theta = np.zeros(x.shape[1]).reshape(-1,1)
+    
+    # perform gradient descent
+    for _ in range(num_iters):
+        # calculate predictions
+        prediction = (x).dot(theta).reshape(-1,1)
+        
+        #calculate errors
+        errors = (prediction - y).reshape(-1,1)
+        
+        # update the theta using gradient descent
+        theta -= learning_rate * (1/ len(x1)) * x.T.dot(errors)
+        
+        return theta
 ```
 
 ## Output:
