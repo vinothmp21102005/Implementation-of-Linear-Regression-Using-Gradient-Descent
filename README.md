@@ -1,17 +1,18 @@
 # Implementation-of-Linear-Regression-Using-Gradient-Descent
 
 ## AIM:
-To write a program to predict the profit of a city using the linear regression model with gradient descent.
+To write a program to predict the profit of a company using the linear regression model with gradient descent.
 
 ## Equipments Required:
 1. Hardware – PCs
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
 ## Algorithm
-1. 
-2. 
-3. 
-4. 
+1. import necessary python library.
+2. create a function for linear regression with 4 parameters.
+3. read the csv file using pandas
+4. assume the last column as your targer variable 'y' and the preceding columns as your feature
+5. scale the value using standard scaler and call the function regression and print the predicted value
 
 ## Program:
 ```
@@ -82,7 +83,8 @@ print(f"\npredicted value: \n{pre}")
 ```
 
 ## Output:
-![linear regression using gradient descent](sam.png)
+
+![Screenshot 2024-09-05 142550](https://github.com/user-attachments/assets/94e1bd71-cc0a-4fd7-98e7-c5de7793753d)
 
 
 ## Result:
