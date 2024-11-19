@@ -8,11 +8,12 @@ To write a program to predict the profit of a company using the linear regressio
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
 ## Algorithm
-1. import necessary python library.
-2. create a function for linear regression with 4 parameters.
-3. read the csv file using pandas
-4. assume the last column as your targer variable 'y' and the preceding columns as your feature
-5. scale the value using standard scaler and call the function regression and print the predicted value
+1. Use numpy, pandas, and StandardScaler for computations and preprocessing.
+2. Read the dataset and extract features (x) and target (y) variables.
+3. Normalize features and target using StandardScaler.
+4. Add a bias column to x and initialize parameters (theta) as zeros.
+5. Update theta iteratively using gradient descent.
+6. Scale new data, predict using theta, and inverse-transform the result.
 
 ## Program:
 ```
